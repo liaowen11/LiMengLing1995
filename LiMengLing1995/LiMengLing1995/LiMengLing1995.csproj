@@ -117,16 +117,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap-theme.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\jquery.js" />
+    <Content Include="dist\js\jquery.min.js" />
+    <Content Include="dist\js\npm.js" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Validator\demo.html" />
+    <Content Include="Validator\demo.xml" />
+    <Content Include="Validator\demo\demo1.html" />
+    <Content Include="Validator\demo\demo2.html" />
+    <Content Include="Validator\demo\demo3.html" />
+    <Content Include="Validator\demo\demo4.html" />
+    <Content Include="Validator\demo\demo5.html" />
+    <Content Include="Validator\demo\index.html" />
+    <Content Include="Validator\demo\quick_test.html" />
+    <Content Include="Validator\demo\syn_tree_demo.html" />
+    <Content Include="Validator\images\error.gif" />
+    <Content Include="Validator\images\hide.gif" />
+    <Content Include="Validator\images\icon_err.gif" />
+    <Content Include="Validator\images\icon_pass.gif" />
+    <Content Include="Validator\images\show.gif" />
+    <Content Include="Validator\images\sucess.gif" />
+    <Content Include="Validator\images\tipsy.gif" />
+    <Content Include="Validator\jquery.tipsy.js" />
+    <Content Include="Validator\jquery.validation.js" />
+    <Content Include="Validator\jquery.validationConfig.js" />
+    <Content Include="Validator\tipsy.css" />
+    <Content Include="Validator\version.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +169,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Views\index.cshtml" />
+    <Content Include="dist\css\bootstrap-theme.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\User\LogIn.cshtml" />
+    <Content Include="Views\Layouts\Form.cshtml" />
+    <Content Include="Views\User\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,8 +187,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
