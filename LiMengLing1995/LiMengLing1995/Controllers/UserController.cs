@@ -8,14 +8,13 @@ namespace LiMengLing1995.Controllers
 {
     public class UserController : Controller
     {
-        // GET: User
-        public ActionResult Index()
+        [HttpPost]
+        public ActionResult IsLogIn(string Email, string Pwd)
         {
             return View();
         }
 
-        [HttpPost]
-        public ActionResult LogIn(string Email, string Pwd)
+        public ActionResult LogIn()
         {
             return View();
         }
