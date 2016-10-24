@@ -19,7 +19,10 @@
 </head>
 <body>
     <div>
-        @RenderBody()
+        <form class="form-horizontal" method="post">
+            @Html.AntiForgeryToken()
+            @RenderBody()
+        </form>
     </div>
 </body>
 </html>
